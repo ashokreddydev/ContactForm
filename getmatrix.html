@@ -47,7 +47,8 @@
             $.ajax({
                 type: 'GET',
                 url: 'http://54.200.111.171:4200/api/getmatrix',
-                dataType:'json',
+                  datatype:"jsonp",
+	                jsonp:"callback",
                 success: function(result) {
 
                     var htmlTagData = "";
